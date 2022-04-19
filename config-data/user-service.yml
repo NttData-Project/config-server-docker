@@ -4,9 +4,9 @@ server:
     include-message: always
     include-binding-errors: always
 pasive:
-  card: "http://localhost:8022"
+  card: "http://host.docker.internal:8022"
 active:
-  card: "http://localhost:8032"
+  card: "http://host.docker.internal:8032"
 resilience4j:
   circuitbreaker:
     instances:
@@ -30,7 +30,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://host.docker.internal:8761/eureka/
 
 management:
   endpoints:
