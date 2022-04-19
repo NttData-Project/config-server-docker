@@ -5,7 +5,7 @@ server:
     include-binding-errors: always
 
 pasive:
-  card: "http://localhost:8022"
+  card: "http://host.docker.internal:8022"
 
 spring:
   data:
@@ -15,7 +15,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://host.docker.internal:8761/eureka/
 
 management:
   endpoints:
